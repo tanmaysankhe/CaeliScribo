@@ -3,6 +3,8 @@ import numpy as np
 from cvpen import pointer
 import mouseControl as mc
 
+
+
 cap = cv2.VideoCapture(0)
 
 while True:
