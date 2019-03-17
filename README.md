@@ -7,8 +7,8 @@ Simulation of Air Writing Softwares for Smart Wearables.
 ## Table of Contents
 
 1. [Getting Started](#Getting-Started)
-2. [Running the system](#Running the system)
-3. [How it works](#How it works)
+2. [Running the system](#Running-the-system)
+3. [How it works](#How-it-works)
 4. [Authors](#Authors)
 5. [License](#License)
 6. [Acknowledgments](#Acknowledgments)
