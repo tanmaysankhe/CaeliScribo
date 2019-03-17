@@ -110,6 +110,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Sendex
-* Pranav Mistry Ted Talk - Sixth Sense
+* [Sendex Tutorials](https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial/)
+* [Pranav Mistry Ted Talk - Sixth Sense](https://www.ted.com/talks/pranav_mistry_the_thrilling_potential_of_sixthsense_technology?language=en)
 * StackOverflow
+
