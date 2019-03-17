@@ -90,10 +90,12 @@ Copy the contents of repository in
 models/research/objectdetection
 ```
 
-Finally, open terminal in objectdetection folder and run
+Open terminal in objectdetection folder and run
 ```
 python main.py
 ```
+
+Finally, open localhost:5000 in browser and write in air...
 
 ## Authors
 
