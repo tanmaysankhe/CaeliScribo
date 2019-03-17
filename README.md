@@ -2,7 +2,7 @@
 
 Simulation of Air Writing Softwares for Smart Wearables.
 
-![image](https://github.com/tanmaysankhe/CaeliScribo/blob/master/screeenshots/ss1.png)
+![image](https://github.com/tanmaysankhe/CaeliScribo/blob/master/Screenshot%20(8).png)
 
 ## Table of Contents
 
