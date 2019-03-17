@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+    <link rel="stylesheet" type="text/css" href="/static/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body style="background-color: white;">
+  
+  <nav class="purple darken2">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">AirWrite</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+   <div class="content">
+     <div class="container" style="margin-top: 30px;">
+     <!-- heading of the page 
+      <h1 class="purple-text">Video Streaming Demonstration</h1>
+      <!-- ============main component of video and iframe ==================-->
+      <div class="row card"  >
+       <div style="padding-top: 20px; padding-right: 50px; padding-left: 20px;">
+        <div class="col s8" >
+          <img id="bg" class="responsive-img" src="{{ url_for('video_feed') }}" style="margin-top: 30px; height: 400px;">
+        </div>
+        <div class="col s4">
+          <div class="row">
+            <iframe  class="frame" src="http://localhost:5000/three" style="border:1px solid purple;">
+            </iframe>
+          </div>
+          <div class="row">
+            <iframe  class="frame" src="http://localhost:5000/render_word" style="border:1px solid purple;">
+            </iframe>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- =========================Gesture Cards =============================-->
+      <div class="container">
+        <div class="row">
+      <div class = "col s2">
+          <img src="/static/0.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Nothing</p>
+        </div>
+        <div class = "col s2">
+          <img src="/static/1.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Write</p>
+        </div>
+        <div class = "col s2">
+          <img src="/static/2.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Predict Character</p>
+        </div>
+        <div class = "col s2">
+          <img src="/static/3.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Prediction</p>
+        </div>
+        <div class = "col s2">
+          <img src="/static/4.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Clear</p>
+        </div>
+        <div class = "col s2">
+          <img src="/static/5.jpg" alt="image" style="height: 100px; width: 100px">
+          <p>Space</p>
+        </div>
+        
+      </div>
+    </div>
+	<script src="/static/materialize.js"></script>
+
+
+  </body>
+</html>
