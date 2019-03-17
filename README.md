@@ -4,6 +4,16 @@ Simulation of Air Writing Softwares for Smart Wearables.
 
 ![image](https://github.com/tanmaysankhe/CaeliScribo/blob/master/screeenshots/ss1.png)
 
+## Table of Contents
+
+1. [Getting Started](#Getting Started)
+2. [Running the system](#Running the system)
+3. [How it works](# How it works)
+4. [Authors](#Authors)
+5. [License](#License)
+6. [Acknowledgments](#Acknowledgments)
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -96,6 +106,14 @@ python main.py
 ```
 
 Finally, open localhost:5000 in browser and write in air...
+
+## How it works
+
+1. Show one finger and write a word.
+2. Show two fingers to predict the air written word.
+3. Show three fingers to give a space.
+4. Show four fingers to enter prediction mode and the show n fingers to add nth selection.
+5. Show five fingers for backspace.
 
 ## Authors
 
