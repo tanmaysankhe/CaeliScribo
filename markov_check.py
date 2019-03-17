@@ -1,4 +1,7 @@
-from markov import markov_here
+import markovCompletion as markov
 
 
-print(markov_here('A'))
+m = markov.Markov()
+
+
+print(m.markov_here('A'))

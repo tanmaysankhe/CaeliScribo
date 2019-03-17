@@ -16,8 +16,13 @@ class Markov:
 
 	def markov(self):
 		tokens = self.data.strip().split(" ")
-		for i in range(len(tokens)-1):
-			self.prob(self.probabilties, tokens[i], tokens[i+1])
+		for i in range(len(tokens)):
+			if len(tokens[i]) > 1:
+				self.prob(self.probabilties, tokens[i][:1], tokens[i][1:])
+			elif len(tokens[i]) > 2:
+				self.prob(self.probabilties, tokens[i][:2], tokens[i][2:])
+			elif len(tokens[i]) > 3:
+				self.prob(self.probabilties, tokens[i][:3], tokens[i][3:])
 
 	def calculate_predictions(self,probabilties):
 		for key in probabilties:
@@ -29,9 +34,7 @@ class Markov:
 
 	def markov_here(self,t):
 		print(self.probabilties)
-		
-		#print(probabilties)
-
+		self.calculate_predictions(self.probabilties)
 		if t in self.probabilties:
 			top = self.probabilties[t][:3]
 			return top
