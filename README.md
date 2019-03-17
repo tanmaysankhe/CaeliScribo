@@ -112,7 +112,7 @@ Finally, open localhost:5000 in browser and write in air...
 1. Show one finger and write a word.
 2. Show two fingers to predict the air written word.
 3. Show three fingers to give a space.
-4. Show four fingers to enter prediction mode and the show n fingers to add nth selection.
+4. Show four fingers to enter prediction mode and then show n fingers to add nth selection.
 5. Show five fingers for backspace.
 
 ## Authors
