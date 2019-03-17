@@ -37,7 +37,7 @@ Protobuf
 
 ### Installing Prerequisites
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development env running. Open an issue if you get any problem installing below mentioned requisites 
 
 
 Install TensorFlow version 1.12
@@ -70,7 +70,7 @@ unzip protoc-3.3.0-linux-x86_64.zip -d protoc3
 Move protoc to /usr/local/bin/
 sudo mv protoc3/bin/* /usr/local/bin/
 
- Move protoc3/include to /usr/local/include/
+Move protoc3/include to /usr/local/include/
 sudo mv protoc3/include/* /usr/local/include/
 
 Optional: change owner
@@ -95,9 +95,9 @@ Clone our repository
 git clone https://github.com/tanmaysankhe/CaeliScribo
 ```
 
-Copy the contents of repository in
+Copy the contents of repository in (replace visualization_utils.py in utils folder)
 ```
-models/research/objectdetection
+models/research/object_detection
 ```
 
 Open terminal in objectdetection folder and run
@@ -117,12 +117,12 @@ Finally, open localhost:5000 in browser and write in air...
 
 ## Authors
 
-* **Tanmay Sankhe** - [PurpleBooth](https://github.com/tanmaysankhe)
+* [**Tanmay Sankhe**](https://github.com/tanmaysankhe)
 
 
-* **Mumbaikar007** - [PurpleBooth](https://github.com/Mumbaikar007)
+* [**Mumbaikar007**](https://github.com/Mumbaikar007)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/tanmaysankhe/CaeliScribo/graphs/contributors) who participated in this project.
 
 ## License
 
