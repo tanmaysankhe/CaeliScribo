@@ -1,17 +1,42 @@
-data = " i like fruits . i am in mumbai hackathon . what is this . who is markov and did he invent this chain . if you pull chances are you might be finned ."
+import collections
 
-def tokenizer(data):
-	return data.strip().split(" ")
+#data = "i have a note book . how are you . wubba lubba dub dub . i have a pendrive . you have two pens . you and i .  i dont know why i am doing this . i dont i dont "
 
-possible_dic, probability = {}, {}
-
-def possibilitizer(next,key):
-	if key not in possible_dic:
-		possible_dic[key] = []
-	possible_dic[key].append(next)
+data = " A Pubg Tournament . A Mumbai Hackathon . An Amazing Mumbai Hacking Tournament . Amazing #MumbaiHackathon2019 . Amazing Night . A Mumbai Breakfast ."
 
 
-tokens = tokenizer(data)
-for i in range(len(tokens)- 1):
-	possibilitizer(tokens[i+1], tokens[i])
-print(possible_dic)
+probabilties = {}
+
+
+def prob(probabilties, key, value):
+	if key not in probabilties:
+		probabilties[key] = []
+	probabilties[key].append(value)
+
+def markov():
+	tokens = data.strip().split(" ")
+	for i in range(len(tokens)-1):
+		prob(probabilties, tokens[i], tokens[i+1])
+
+def calculate_predictions(probabilties):
+	for key in probabilties:
+		probabilties[key] = collections.Counter(probabilties[key]).most_common()
+		probabilties[key] = [i[0] for i in probabilties[key]]
+
+
+
+
+def markov_here(t):
+	global probabilties
+	markov()
+	calculate_predictions(probabilties)
+	#print(probabilties)
+
+	if t in probabilties:
+		top = probabilties[t][:3]
+		return top
+		#print("----->",top,)
+
+
+	# if t == '1':
+	# 	prediction[]
