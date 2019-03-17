@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+  </head>
+  <body>
+
+    <div id = "the_string" height = "100">
+        E-text 
+    </div>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript">
+			window.setInterval(function(){
+	  
+                $.ajax({
+                    type: 'POST',
+                    url: '/word_fetch',
+                    success: function(callback) {
+                        console.log(callback);
+                        // Watch out for Cross Site Scripting security issues when setting dynamic content!
+                        $("#the_string").html(callback.written_content);
+                    },
+                    error: function() {
+                        $(this).html("error!");
+                    }
+                });
+
+
+			}, 3000);
+
+        </script>
+
+  </body>
+    
+</html>
+

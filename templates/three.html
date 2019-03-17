@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+        <div id = "the_string_1" height = "100">
+                E-text 1
+        </div>
+
+        <div id = "the_string_2" height = "100">
+                E-text 2
+        </div>
+
+        <div id = "the_string_3" height = "100">
+                E-text 3
+        </div>
+
+        
+        
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript">
+			window.setInterval(function(){
+	  
+                $.ajax({
+                    type: 'POST',
+                    url: '/markov_man',
+                    success: function(callback) {
+                        console.log(callback);
+                        // Watch out for Cross Site Scripting security issues when setting dynamic content!
+                        $("#the_string_1").html(callback.one);
+                        $("#the_string_2").html(callback.two);
+                        $("#the_string_3").html(callback.three);
+                    },
+                    error: function() {
+                        $(this).html("error!");
+                    }
+                });
+
+
+			}, 5000);
+
+        </script>
+
+
+</body>
+</html>     
