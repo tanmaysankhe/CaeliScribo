@@ -6,15 +6,15 @@ Simulation of Air Writing Softwares for Smart Wearables.
 
 ## Table of Contents
 
-1. [Getting Started](#Getting Started)
+1. [Getting Started](#Getting_Started)
 2. [Running the system](#Running the system)
-3. [How it works](# How it works)
+3. [How it works](#How it works)
 4. [Authors](#Authors)
 5. [License](#License)
 6. [Acknowledgments](#Acknowledgments)
 
 
-## Getting Started
+## Getting_Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
